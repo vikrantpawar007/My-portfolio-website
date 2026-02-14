@@ -210,9 +210,11 @@ h3{
 
 .hero-container{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 1220px;
+    margin: auto;
 }
 
 .hero{
@@ -231,6 +233,11 @@ h3{
 .btn-container{
     display: flex;
     gap: 15px;
+}
+
+.about-img-2{
+    width: 100%;
+    max-width: 440px;
 }
 
 .img-arrow{
@@ -489,8 +496,19 @@ h4{
         font-size: 20px;
     }
 
+    .hero-container{
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .about-img-2 {
+        border-radius: 10px;
+        width: 60%;
+    }
+
     .hero{
-        gap: 20px;
+        gap: 15px;
+        padding: 20px;
     }
 
     .btn-container{
