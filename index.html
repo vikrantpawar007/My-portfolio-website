@@ -20,10 +20,10 @@
         
         <!-- Navigation Links -->
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="assets/pages/about/index.html">About me</a>
-                <button class="cta-2">
-                    <img src="assets/images/desktop/translate icon-white.svg" alt="translate icon">日本語
+                <a href="index.html" data-en="Home" data-ja="ホーム">Home</a>
+                <a href="assets/pages/about/index.html" data-en="About me" data-ja="私について">About me</a>
+                <button class="cta-2" id="lang-toggle-btn">
+                    <img src="assets/images/desktop/translate icon-white.svg" alt="translate icon"><span id="lang-btn-text">日本語</span>
                 </button>
             </div>
         </div>
@@ -32,11 +32,11 @@
     <main>
         <div class="hero-container">
             <div class="hero">
-                <h3>Namaste . Konichiwa . Hello !</h3>
-                <h1>I design and build user-centered digital experiences — from <span>user research</span> to <span>responsive front-end.</span></h1>
+                <h3 data-en="Namaste . Konichiwa . Hello !" data-ja="ナマステ・こんにちは・ハロー！">Namaste . Konichiwa . Hello !</h3>
+                <h1 data-en="I design and build user-centered digital experiences — from <span>user research</span> to <span>responsive front-end.</span>" data-ja="<span>ユーザーリサーチ</span>からレスポンシブなデザインの<span>フロントエンド</span>まで、ユーザー中心のデジタル体験をデザイン・構築しています。">I design and build user-centered digital experiences — from <span>user research</span> to <span>responsive front-end.</span></h1>
                 <div class="btn-container">
-                    <button class="cta-1" onclick="window.open('assets/resume-workhistory/Vikrant Pawar履歴書.pdf', '_blank')">Resume</button>
-                    <button class="cta-3" onclick="window.open('assets/resume-workhistory/職務経歴書_Vikrant Dilip Pawar.pdf', '_blank')">Work history</button>
+                    <button data-en="Resume" data-ja="履歴書" class="cta-1" onclick="window.open('assets/resume-workhistory/Vikrant Pawar履歴書.pdf', '_blank')">Resume</button>
+                    <button data-en="Work history" data-ja="職務経歴　" class="cta-3" onclick="window.open('assets/resume-workhistory/職務経歴書_Vikrant Dilip Pawar.pdf', '_blank')">Work history</button>
                 </div>
             </div>
             <img src="assets/images/desktop/about-me-2.png" alt="about-me" class="about-img-2">
@@ -45,15 +45,15 @@
         <img src="assets/images/desktop/arrow.svg" alt="arrow" class="img-arrow">
         
         <div class="works-section">
-            <h2>View My Works</h2>
+            <h2 data-en="View My Works" data-ja="ポートフォリオを見る">View My Works</h2>
 
             
             <div class="work-container">
                 <img src="assets/images/desktop/thumbnail-1.webp" alt="project-1" class="img-work">
                 <div class="work-content">
                     <div class="name-description">
-                        <h4>HOP English School Website</h4>
-                        <p>Redesigned the HOP English website to improve usability and information architecture. Implemented a clean, intuitive navigation system and modern UI to help students and parents quickly access essential information, ensuring consistency with the mobile app experience.</p>
+                        <h4 data-en="HOP English School Website" data-ja="ウェブサイトHOP英会話スクール">HOP English School Website</h4>
+                        <p data-en="Redesigned the HOP English website to improve usability and information architecture. Implemented a clean, intuitive navigation system and modern UI to help students and parents quickly access essential information, ensuring consistency with the mobile app experience." data-ja="使いやすさと情報設計を改善するため、HOPイングリッシュのウェブサイトをリデザインしました。生徒や保護者が必要な情報にすばやくアクセスできるよう、シンプルで直感的なナビゲーションとモダンなUIを実装し、モバイルアプリとの一貫性も確保しています。">Redesigned the HOP English website to improve usability and information architecture. Implemented a clean, intuitive navigation system and modern UI to help students and parents quickly access essential information, ensuring consistency with the mobile app experience.</p>
                     </div>
 
                     <div class="btn-container-2">
@@ -65,7 +65,7 @@
                             <path d="M18.5 0C16.0705 0 13.6649 0.477143 11.4204 1.40419C9.17583 2.33123 7.13641 3.69002 5.41852 5.40297C1.9491 8.86243 0 13.5545 0 18.4469C0 26.6004 5.3095 33.518 12.654 35.9714C13.579 36.119 13.875 35.5471 13.875 35.0491V31.9316C8.7505 33.0384 7.659 29.4597 7.659 29.4597C6.808 27.3198 5.6055 26.748 5.6055 26.748C3.922 25.6043 5.735 25.6412 5.735 25.6412C7.585 25.7703 8.5655 27.5412 8.5655 27.5412C10.175 30.3451 12.8945 29.515 13.949 29.0723C14.1155 27.8732 14.5965 27.0616 15.1145 26.6004C11.0075 26.1392 6.697 24.5528 6.697 17.5245C6.697 15.4769 7.4 13.8352 8.6025 12.5254C8.4175 12.0643 7.77 10.1458 8.7875 7.65546C8.7875 7.65546 10.3415 7.15739 13.875 9.53704C15.3365 9.13121 16.9275 8.92829 18.5 8.92829C20.0725 8.92829 21.6635 9.13121 23.125 9.53704C26.6585 7.15739 28.2125 7.65546 28.2125 7.65546C29.23 10.1458 28.5825 12.0643 28.3975 12.5254C29.6 13.8352 30.303 15.4769 30.303 17.5245C30.303 24.5713 25.974 26.1208 21.8485 26.582C22.5145 27.1538 23.125 28.2791 23.125 29.9946V35.0491C23.125 35.5471 23.421 36.1374 24.3645 35.9714C31.709 33.4995 37 26.6004 37 18.4469C37 16.0244 36.5215 13.6256 35.5918 11.3876C34.6621 9.14949 33.2994 7.11592 31.5815 5.40297C29.8636 3.69002 27.8242 2.33123 25.5796 1.40419C23.3351 0.477143 20.9295 0 18.5 0Z" fill="#D9D9D9"/>
                         </svg></a>
                         </div>
-                        <button class="cta-4" onclick="window.open('https://hop-english-school-website.vercel.app/index.html', '_blank')">Check now ></button>
+                        <button data-en="Check now >" data-ja="今すぐ見る　" class="cta-4" onclick="window.open('https://hop-english-school-website.vercel.app/index.html', '_blank')">Check now ></button>
                     </div>
                 </div>
             </div>
@@ -74,8 +74,8 @@
                 <img src="assets/images/desktop/thumbnail-2.webp" alt="project-1" class="img-work">
                 <div class="work-content">
                     <div class="name-description">
-                        <h4>Ebook EC Website</h4>
-                        <p>Designed an eBook platform that allows users to buy and borrow digital books, providing a smooth reading experience and promoting accessible, eco-friendly reading for book lovers.</p>
+                        <h4 data-en="Ebook EC Website" data-ja="ECサイト電子書籍">Ebook EC Website</h4>
+                        <p data-en="Designed an eBook platform that allows users to buy and borrow digital books, providing a smooth reading experience and promoting accessible, eco-friendly reading for book lovers." data-ja="ユーザーが電子書籍の購入・短期レンタルができるプラットフォームをデザインしました。気に入らなければすぐに別の本に切り替えられる手軽なレンタル機能を中心に、快適な読書体験を提供しています。面倒な手続きなしに本を試し読みできるため、本好きのための自由でエコフレンドリーな読書スタイルを実現しています。">Designed an eBook platform that allows users to buy and borrow digital books, providing a smooth reading experience and promoting accessible, eco-friendly reading for book lovers.</p>
                     </div>
 
                     <div class="btn-container-2">
@@ -87,7 +87,7 @@
                             <path d="M18.5 0C16.0705 0 13.6649 0.477143 11.4204 1.40419C9.17583 2.33123 7.13641 3.69002 5.41852 5.40297C1.9491 8.86243 0 13.5545 0 18.4469C0 26.6004 5.3095 33.518 12.654 35.9714C13.579 36.119 13.875 35.5471 13.875 35.0491V31.9316C8.7505 33.0384 7.659 29.4597 7.659 29.4597C6.808 27.3198 5.6055 26.748 5.6055 26.748C3.922 25.6043 5.735 25.6412 5.735 25.6412C7.585 25.7703 8.5655 27.5412 8.5655 27.5412C10.175 30.3451 12.8945 29.515 13.949 29.0723C14.1155 27.8732 14.5965 27.0616 15.1145 26.6004C11.0075 26.1392 6.697 24.5528 6.697 17.5245C6.697 15.4769 7.4 13.8352 8.6025 12.5254C8.4175 12.0643 7.77 10.1458 8.7875 7.65546C8.7875 7.65546 10.3415 7.15739 13.875 9.53704C15.3365 9.13121 16.9275 8.92829 18.5 8.92829C20.0725 8.92829 21.6635 9.13121 23.125 9.53704C26.6585 7.15739 28.2125 7.65546 28.2125 7.65546C29.23 10.1458 28.5825 12.0643 28.3975 12.5254C29.6 13.8352 30.303 15.4769 30.303 17.5245C30.303 24.5713 25.974 26.1208 21.8485 26.582C22.5145 27.1538 23.125 28.2791 23.125 29.9946V35.0491C23.125 35.5471 23.421 36.1374 24.3645 35.9714C31.709 33.4995 37 26.6004 37 18.4469C37 16.0244 36.5215 13.6256 35.5918 11.3876C34.6621 9.14949 33.2994 7.11592 31.5815 5.40297C29.8636 3.69002 27.8242 2.33123 25.5796 1.40419C23.3351 0.477143 20.9295 0 18.5 0Z" fill="#D9D9D9"/>
                             </svg></a>
                         </div>
-                        <button class="cta-4" onclick="window.open('https://ebook-website-gray-seven.vercel.app/', '_blank')">Check now ></button>
+                        <button data-en="Check now >" data-ja="今すぐ見る　" class="cta-4" onclick="window.open('https://ebook-website-gray-seven.vercel.app/', '_blank')">Check now ></button>
                     </div>
                 </div>
             </div>
@@ -96,8 +96,8 @@
                 <img src="assets/images/desktop/thumbnail-3.webp" alt="project-1" class="img-work">
                 <div class="work-content">
                     <div class="name-description">
-                        <h4>HOP English School App</h4>
-                        <p>Designed an interactive English learning app for Japanese students, featuring quizzes, video lessons, and review tools to enhance learning retention and motivation. The platform enables students to study anytime, creating a flexible and engaging learning experience.</p>
+                        <h4 data-en="HOP English School App" data-ja="アプリHOP英会話スクール">HOP English School App</h4>
+                        <p data-en="Designed an interactive English learning app for Japanese students, featuring quizzes, video lessons, and review tools to enhance learning retention and motivation. The platform enables students to study anytime, creating a flexible and engaging learning experience." data-ja="日本人学生向けのインタラクティブな英語学習アプリをデザインしました。クイズ・動画レッスン・復習ツールを搭載し、学習定着とモチベーション向上を図っています。いつでもどこでも学習できる柔軟な環境を実現しています。">Designed an interactive English learning app for Japanese students, featuring quizzes, video lessons, and review tools to enhance learning retention and motivation. The platform enables students to study anytime, creating a flexible and engaging learning experience.</p>
                     </div>
 
                     <div class="btn-container-2">
@@ -111,7 +111,7 @@
                             </svg></a>
                             -->
                         </div>
-                        <button class="cta-4">Check now ></button>
+                        <button data-en="Check now >" data-ja="今すぐ見る　" class="cta-4">Check now ></button>
                     </div>
                 </div>
             </div>
@@ -120,8 +120,8 @@
                 <img src="assets/images/desktop/thumbnail-4.webp" alt="project-1" class="img-work">
                 <div class="work-content">
                     <div class="name-description">
-                        <h4>Homely Meals App</h4>
-                        <p>Designed a meal delivery app connecting users with local home cooks, providing convenient access to nutritious and affordable home-style food.</p>
+                        <h4 data-en="Homely Meals App" data-ja="アプリホームリーミールズ">Homely Meals App</h4>
+                        <p data-en="Designed a meal delivery app connecting users with local home cooks, providing convenient access to nutritious and affordable home-style food." data-ja="地元の家庭料理人とユーザーをつなぐフードデリバリーアプリをデザインしました。栄養バランスのとれた手頃な家庭料理に、手軽にアクセスできます。">Designed a meal delivery app connecting users with local home cooks, providing convenient access to nutritious and affordable home-style food.</p>
                     </div>
 
                     <div class="btn-container-2">
@@ -135,14 +135,14 @@
                             </svg></a>
                             -->
                         </div>
-                        <button class="cta-4">Check now ></button>
+                        <button data-en="Check now >" data-ja="今すぐ見る　" class="cta-4">Check now ></button>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="skills-container">
-            <h2>Software Skills</h2>
+            <h2 data-en="Software Skills" data-ja="使用ソフトウェア">Software Skills</h2>
             <div class="softwares">
                 <img src="assets/images/desktop/photoshop-line.svg" alt="" class="img-sft">
                 <img src="assets/images/desktop/illustrator-line.svg" alt="" class="img-sft">
@@ -165,7 +165,7 @@
                 <div class="sec-content">
                     <h3>Let’s Talk</h3>
                     <a href="mailto:vikrantdilippawar@gmail.com" target="_blank">vikrantdilippawar@gmail.com</a>
-                    <p>Based in Japan but welcome works wordwide.</p>
+                    <p data-en="Based in Japan but welcome works wordwide." data-ja="日本在住ですが、世界中からのお仕事を歓迎しています。">Based in Japan but welcome works wordwide.</p>
                 </div>
 
                 <div class="social-links">
@@ -184,7 +184,7 @@
             </div>
 
             <div class="copywrite">
-                <span>This website is designed and developed by me</span>
+                <span data-en="This website is designed and developed by me" data-ja="このウェブサイトは私がデザイン・開発しました">This website is designed and developed by me</span>
                 <span>2026 © Vikrant Pawar</span>
             </div>
         </div>
